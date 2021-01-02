@@ -7,7 +7,6 @@ spl_autoload_register(function($classname){
 });
 
 $p = new revolver();
-
-for ($i=0; $i < 4; $i++) { 
+/*for ($i=0; $i < 4; $i++) { 
     $p->Disparar();
-}
+}*/
