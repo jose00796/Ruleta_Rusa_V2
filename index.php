@@ -5,3 +5,9 @@ spl_autoload_register(function($classname){
                 require "src/$classname.php";
             }
 });
+
+$p = new revolver();
+
+for ($i=0; $i < 4; $i++) { 
+    $p->Disparar();
+}
