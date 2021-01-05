@@ -1,0 +1,11 @@
+(2021-01-05 03:17:17) <h1> LISTA DE JUGADORES</h1>
+(2021-01-05 03:17:18) <p>1 - Jose <hr>
+(2021-01-05 03:17:18) <p>2 - Eiker <hr>
+(2021-01-05 03:17:18) <p>3 - David <hr>
+(2021-01-05 03:17:18) <p>4 - Pedro <hr>
+(2021-01-05 03:17:18) <p>5 - Victor <hr>
+(2021-01-05 03:17:18) <p>El Wuebon Jose se Dispara a si mismo
+(2021-01-05 03:17:18) <p>El Wuebon Eiker se Dispara a si mismo
+(2021-01-05 03:17:18) <p>El Wuebon David se Dispara a si mismo
+(2021-01-05 03:17:18) <p>El Wuebon Pedro se Dispara a si mismo
+(2021-01-05 03:17:18) <p>El Wuebon Pedro Ha Muerto, Triste, GRACIAS POR JUGAR

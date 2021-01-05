@@ -25,7 +25,7 @@ class jugador
     public function Disparar(revolver $arma)
     {
         $arma->Disparar();
-        echo "<p>El Wuebon {$this->GetName()} se Dispara a si mismo";
+        Log::Info("<p>El Wuebon {$this->GetName()} se Dispara a si mismo");
 
         if ($arma->GetAcierto() == true) {
             $this->muerte();
@@ -45,7 +45,7 @@ class jugador
     public function partida()
     {
         if ($this->GetEstado() == false) {
-            echo "<p>El Wuebon {$this->GetName()} Ha Muerto, Triste, GRACIAS POR JUGAR";
+            Log::Info("<p>El Wuebon {$this->GetName()} Ha Muerto, Triste, GRACIAS POR JUGAR");
             $this->endgame();
         }
     }

@@ -1,6 +1,8 @@
 <?php
 
 //REVISA GUAPO QUE HAY UNA VAINA RARA POR AHI... 
+//LISTO GALAN, TODO FUE UNA TONTERIA, ME GUSTA MAS LA LOGICA DE AQUI QUE EN LA ORIGINAL...
+//HICISTE QUE LA VERSION ORIGINAL PARECIERA UNA PIRATA JAJAJA... 
 
 spl_autoload_register(function($classname){
             if (file_exists("src/$classname.php")) {
@@ -11,12 +13,14 @@ spl_autoload_register(function($classname){
 $player = new juego();
 $arma = new revolver();
 
+Log::SetLogger(new Html_Logger);
+
 $lista = $player->GetJugadores();
 
-echo "<h1> LISTA DE JUGADORES</h1>";
+Log::Info("<h1> LISTA DE JUGADORES</h1>");
 
 foreach ($lista as $player) {
-    echo "<p>{$player->GetId()} - {$player->GetName()} <hr>";
+    Log::Info("<p>{$player->GetId()} - {$player->GetName()} <hr>");
 }
 
 
