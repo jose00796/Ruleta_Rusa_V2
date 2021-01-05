@@ -17,10 +17,16 @@ class jugador
         return $this->name;
     }
 
+    public function GetId()
+    {
+        return $this->id;
+    }
+
     public function Disparar(revolver $arma)
     {
         $arma->Disparar();
-        
+        echo "<p>El Wuebon {$this->GetName()} se Dispara a si mismo";
+
         if ($arma->GetAcierto() == true) {
             $this->muerte();
         }
@@ -34,5 +40,18 @@ class jugador
     public function GetEstado()
     {
         return $this->alive;
+    }
+
+    public function partida()
+    {
+        if ($this->GetEstado() == false) {
+            echo "<p>El Wuebon {$this->GetName()} Ha Muerto, Triste, GRACIAS POR JUGAR";
+            $this->endgame();
+        }
+    }
+
+    public function endgame()
+    {
+        exit();
     }
 }
